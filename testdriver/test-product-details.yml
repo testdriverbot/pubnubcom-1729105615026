@@ -1,0 +1,22 @@
+version: 4.0.69
+steps:
+  - prompt: Hover over the "Products" menu item.
+    commands:
+      - command: hover-text
+        text: Products
+        description: menu item in the header
+        action: hover
+  - prompt: Click on one of the products listed.
+    commands:
+      - command: hover-text
+        text: Product Name
+        description: specific product in the dropdown menu
+        action: click
+  - prompt: >-
+      Assert that the product details page is displayed with relevant
+      information.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: >-
+          the product details page for Chat SDK is displayed with relevant
+          information
