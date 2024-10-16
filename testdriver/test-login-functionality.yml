@@ -1,0 +1,40 @@
+version: 4.0.69
+steps:
+  - prompt: Click on "LOGIN" in the header.
+    commands:
+      - command: hover-text
+        text: LOGIN
+        description: link in the header
+        action: click
+  - prompt: Assert that the login page is displayed.
+    commands:
+      - command: assert
+        expect: the login page is displayed
+  - prompt: Attempt to log in with test credentials.
+    commands:
+      - command: hover-text
+        text: Email address
+        description: email input field
+        action: click
+      - command: type
+        text: test@example.com
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: testpassword
+      - command: hover-text
+        text: LOG IN
+        description: login button
+        action: click
+  - prompt: Attempt to log in with test credentials.
+    commands:
+      - command: hover-text
+        text: LOG IN
+        description: login button
+        action: click
+      - command: wait
+        timeout: 5000
+      - command: assert
+        expect: the user dashboard is displayed
