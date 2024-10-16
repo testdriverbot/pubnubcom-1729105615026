@@ -1,0 +1,14 @@
+version: 4.0.69
+steps:
+  - prompt: Click on the "Resources" menu item.
+    commands:
+      - command: hover-text
+        text: Resources
+        description: menu item in the header
+        action: click
+  - prompt: >-
+      Assert that the resources page displays articles or resources list.  # Use
+      the content of the file from the environment
+    commands:
+      - command: assert
+        expect: the resources page displays articles or resources list
