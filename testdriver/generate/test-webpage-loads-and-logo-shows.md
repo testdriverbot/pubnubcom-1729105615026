@@ -1,0 +1,1 @@
+1. /explore Assert the PubNub logo is visible on the homepage.
