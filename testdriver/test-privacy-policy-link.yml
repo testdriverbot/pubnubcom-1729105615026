@@ -1,0 +1,21 @@
+version: 4.0.69
+steps:
+  - prompt: Scroll down to find the "Privacy Policy" link in the footer.
+    commands:
+      - command: scroll-until-text
+        text: Privacy Policy
+        direction: down
+  - prompt: Click on "Privacy Policy."
+    commands:
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+  - prompt: >-
+      Assert that the privacy policy page loads successfully.  # Use the content
+      of the file from the environment
+    commands:
+      - command: assert
+        expect: >-
+          the privacy policy page is visible with the title "PubNub Privacy
+          Policy"
