@@ -1,0 +1,96 @@
+version: 4.0.69
+steps:
+  - prompt: Click on the "Start Building" button.
+    commands:
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: Click on the "Start Building" button.
+    commands:
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: Click on the "Start Building" button.
+    commands:
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: Click on the "Start Building" button.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: Click on the "Start Building" button.
+    commands:
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: Click on the "Start Building" button.
+    commands:
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: Click on the "Start Building" button.
+    commands:
+      - command: scroll
+        direction: down
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+  - prompt: Click on the "Start Building" button.
+    commands:
+      - command: scroll
+        direction: down
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: Click on the "Start Building" button.
+    commands:
+      - command: scroll
+        direction: down
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+  - prompt: >-
+      Assert that the user is directed to the sign-up or relevant page.  # Use
+      the content of the file from the environment
+    commands:
+      - command: assert
+        expect: the page shows a registration form
